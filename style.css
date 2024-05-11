@@ -12,6 +12,7 @@ body{
     box-sizing: border-box;
     user-select: none;
     font-family: "Roboto Mono", monospace;
+    user-select: none                     ;
 }
 
 .container{
@@ -1017,3 +1018,59 @@ body{
         width: 50%;
     }
 } 
+
+@media screen and (max-width: 490px) {
+    .shop-btn{
+        display: none;
+    }
+
+    .serach-container{
+        width: 55%;
+    }
+
+    .dis-game{
+        overflow: hidden;
+    }
+
+    .main-png{
+        position: absolute;
+        width: 500px;
+        height: auto;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .played-games{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    .played-games i{
+        display: none;
+    }
+
+    .mid-secondSection{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10px 0 20px 0;
+        gap: 15px;
+    }
+
+    .mid-secondSection h4{
+        margin-left: 0px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .game-heading{   
+        width: auto;
+    }
+
+    .fav-list,.parties,.online-status{
+        height: auto;
+    }
+}
